@@ -1,0 +1,321 @@
+nohup: ignoring input
+the fastp of /data1/shenluemou/test/230131_bulk_rna/data/zygote_g1_3 begin
+Read1 before filtering:
+total reads: 16649991
+total bases: 832499550
+Q20 bases: 805221749(96.7234%)
+Q30 bases: 773716582(92.939%)
+
+Read2 before filtering:
+total reads: 16649991
+total bases: 832499550
+Q20 bases: 710770465(85.3779%)
+Q30 bases: 645826471(77.5768%)
+
+Read1 after filtering:
+total reads: 13894761
+total bases: 692430285
+Q20 bases: 675468990(97.5505%)
+Q30 bases: 654068041(94.4598%)
+
+Read2 after filtering:
+total reads: 13894761
+total bases: 690675871
+Q20 bases: 660544362(95.6374%)
+Q30 bases: 627990512(90.9241%)
+
+Filtering result:
+reads passed filter: 27789522
+reads failed due to low quality: 4559860
+reads failed due to too many N: 1672
+reads failed due to too short: 885984
+reads failed due to low complexity: 62944
+reads with adapter trimmed: 43920
+bases trimmed due to adapters: 385002
+reads with polyX in 3' end: 961516
+bases trimmed in polyX tail: 11408799
+
+Duplication rate: 68.2106%
+
+Insert size peak (evaluated by paired-end reads): 50
+
+JSON report: fastp.json
+HTML report: /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g1_3.html
+
+/data1/shenluemou/biosoft/fastp -i /data1/shenluemou/test/230131_bulk_rna/data/zygote_g1_3_R1.fq -I /data1/shenluemou/test/230131_bulk_rna/data/zygote_g1_3_R2.fq -o /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g1_3_R1.fq -O /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g1_3_R2.fq --html /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g1_3.html --trim_poly_g --poly_g_min_len 5 --trim_poly_x --poly_x_min_len 5 --cut_front --cut_tail --cut_window_size 4 --qualified_quality_phred 15 --low_complexity_filter --complexity_threshold 30 --length_required 30 --thread 4 
+fastp v0.23.2, time used: 29 seconds
+the fastp of zygote_g1_3 finished
+the fastp of /data1/shenluemou/test/230131_bulk_rna/data/zygote_g2_3 begin
+Read1 before filtering:
+total reads: 27540848
+total bases: 1377042400
+Q20 bases: 1336891525(97.0843%)
+Q30 bases: 1291247654(93.7696%)
+
+Read2 before filtering:
+total reads: 27540848
+total bases: 1377042400
+Q20 bases: 1249806911(90.7602%)
+Q30 bases: 1164895720(84.594%)
+
+Read1 after filtering:
+total reads: 25071789
+total bases: 1249732270
+Q20 bases: 1222024092(97.7829%)
+Q30 bases: 1186893221(94.9718%)
+
+Read2 after filtering:
+total reads: 25071789
+total bases: 1247169196
+Q20 bases: 1195935688(95.892%)
+Q30 bases: 1140685885(91.462%)
+
+Filtering result:
+reads passed filter: 50143578
+reads failed due to low quality: 4189590
+reads failed due to too many N: 3098
+reads failed due to too short: 645708
+reads failed due to low complexity: 99722
+reads with adapter trimmed: 61346
+bases trimmed due to adapters: 550516
+reads with polyX in 3' end: 1524000
+bases trimmed in polyX tail: 16550677
+
+Duplication rate: 76.0098%
+
+Insert size peak (evaluated by paired-end reads): 50
+
+JSON report: fastp.json
+HTML report: /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g2_3.html
+
+/data1/shenluemou/biosoft/fastp -i /data1/shenluemou/test/230131_bulk_rna/data/zygote_g2_3_R1.fq -I /data1/shenluemou/test/230131_bulk_rna/data/zygote_g2_3_R2.fq -o /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g2_3_R1.fq -O /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g2_3_R2.fq --html /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g2_3.html --trim_poly_g --poly_g_min_len 5 --trim_poly_x --poly_x_min_len 5 --cut_front --cut_tail --cut_window_size 4 --qualified_quality_phred 15 --low_complexity_filter --complexity_threshold 30 --length_required 30 --thread 4 
+fastp v0.23.2, time used: 49 seconds
+the fastp of zygote_g2_3 finished
+the fastq is /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g1_3_R1/R2.fq
+the reference is /data1/shenluemou/reference/mapping/hisat2/mouse/grcm38/mouse_grcm38_rRNA
+the out_dir is /data1/shenluemou/test/230131_bulk_rna/result/de_2
+the derrna of zygote_g1_3 finished
+the fastq is /data1/shenluemou/test/230131_bulk_rna/result/fastp_1/zygote_g2_3_R1/R2.fq
+the reference is /data1/shenluemou/reference/mapping/hisat2/mouse/grcm38/mouse_grcm38_rRNA
+the out_dir is /data1/shenluemou/test/230131_bulk_rna/result/de_2
+[bam_sort_core] merging from 16 files...
+mkdir: cannot create directory ‘/data1/shenluemou/test/230131_bulk_rna/result/de_2/tmp’: File exists
+the derrna of zygote_g2_3 finished
+the fastq is /data1/shenluemou/test/230131_bulk_rna/result/de_2/zygote_g1_3.fq
+the reference is /data1/shenluemou/reference/mapping/hisat2/mouse/grcm38/mouse_grcm38
+the output_dir is /data1/shenluemou/test/230131_bulk_rna/result/map_2
+bulk_or_pair.sh: line 50: /zygote_g1_3_record.txt: Permission denied
+[bam_sort_core] merging from 16 files...
+bamFilesList: ['/data1/shenluemou/test/230131_bulk_rna/result/map_2/zygote_g1_3_sorted.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+the mapping of zygote_g1_3 finished
+the fastq is /data1/shenluemou/test/230131_bulk_rna/result/de_2/zygote_g2_3.fq
+the reference is /data1/shenluemou/reference/mapping/hisat2/mouse/grcm38/mouse_grcm38
+the output_dir is /data1/shenluemou/test/230131_bulk_rna/result/map_2
+bulk_or_pair.sh: line 50: /zygote_g2_3_record.txt: Permission denied
+[bam_sort_core] merging from 32 files...
+bamFilesList: ['/data1/shenluemou/test/230131_bulk_rna/result/map_2/zygote_g2_3_sorted.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+the mapping of zygote_g2_3 finished
+the bam's name is zygote_g1_3
+the bam is in /data1/shenluemou/test/230131_bulk_rna/result/map_2
+the output_dir is /data1/shenluemou/test/230131_bulk_rna/result/bamqc_3
+gtf is /data1/shenluemou/reference/gtf/mouse/grcm38/mouse_grcm38.gtf
+bed is /data1/shenluemou/reference/bed/mouse/grcm38/mouse_grcm38.bed
+processing /data1/shenluemou/reference/bed/mouse/grcm38/mouse_grcm38.bed ... Done
+processing /data1/shenluemou/test/230131_bulk_rna/result/map_2/zygote_g1_3_sorted.bam ... Finished
+
+the bam-qc of zygote_g1_3 finished
+mkdir: cannot create directory ‘/data1/shenluemou/test/230131_bulk_rna/result/bamqc_3/log’: File exists
+mkdir: cannot create directory ‘/data1/shenluemou/test/230131_bulk_rna/result/bamqc_3/tmp’: File exists
+mkdir: cannot create directory ‘/data1/shenluemou/test/230131_bulk_rna/result/bamqc_3/read_distribution/’: File exists
+the bam's name is zygote_g2_3
+the bam is in /data1/shenluemou/test/230131_bulk_rna/result/map_2
+the output_dir is /data1/shenluemou/test/230131_bulk_rna/result/bamqc_3
+gtf is /data1/shenluemou/reference/gtf/mouse/grcm38/mouse_grcm38.gtf
+bed is /data1/shenluemou/reference/bed/mouse/grcm38/mouse_grcm38.bed
+processing /data1/shenluemou/reference/bed/mouse/grcm38/mouse_grcm38.bed ... Done
+processing /data1/shenluemou/test/230131_bulk_rna/result/map_2/zygote_g2_3_sorted.bam ... Finished
+
+the bam-qc of zygote_g2_3 finished
+the bam is/data1/shenluemou/test/230131_bulk_rna/result/map_2/zygote_g1_3_sorted.bam
+the gtf is /data1/shenluemou/reference/gtf/mouse/grcm38/mouse_grcm38.gtf
+the output_dir is /data1/shenluemou/test/230131_bulk_rna/result/abundance_4
+the abundance of zygote_g1_3 finished
+the bam is/data1/shenluemou/test/230131_bulk_rna/result/map_2/zygote_g2_3_sorted.bam
+the gtf is /data1/shenluemou/reference/gtf/mouse/grcm38/mouse_grcm38.gtf
+the output_dir is /data1/shenluemou/test/230131_bulk_rna/result/abundance_4
+mkdir: cannot create directory ‘/data1/shenluemou/test/230131_bulk_rna/result/abundance_4/ballgown/’: File exists
+the abundance of zygote_g2_3 finished
+-------------------------------------
+the fpkm is in /data1/shenluemou/test/230131_bulk_rna/result/abundance_4
+the working_dir/output-dir is in /data1/shenluemou/test/230131_bulk_rna/result/matrix_5
+the total_abundance finished
+-------------------------------------
+the working_dir is /data1/shenluemou/test/230131_bulk_rna/result/matrix_5
+the ballgown_dir is /data1/shenluemou/test/230131_bulk_rna/result/abundance_4
+the ballgown has finished
+---------------------------------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+Loading required package: plyr
+Loading required package: scales
+Loading required package: grid
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:plyr’:
+
+    rename
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:plyr’:
+
+    desc
+
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following object is masked from ‘package:plyr’:
+
+    count
+
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+estimating size factors
+estimating dispersions
+Error in checkForExperimentalReplicates(object, modelMatrix) : 
+
+  The design matrix has the same number of samples and coefficients to fit,
+  so estimation of dispersion is not possible. Treating samples
+  as replicates was deprecated in v1.20 and no longer supported since v1.22.
+
+Calls: deseq2_multi_compare ... estimateDispersions -> .local -> checkForExperimentalReplicates
+In addition: Warning message:
+In DESeqDataSet(se, design = design, ignoreRank) :
+  some variables in design formula are characters, converting to factors
+Execution halted
+./pipline_pair.sh: line 79: syntax error near unexpected token `fi'
+./pipline_pair.sh: line 79: `fi'
